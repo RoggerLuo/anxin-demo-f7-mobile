@@ -1,0 +1,56 @@
+<div class="list-block accordion-list" style="margin:0px 0 0px 0;">
+    <ul>
+        <li class="accordion-item">
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">高管姓名</div>
+                    <!-- <div class="content">{{name}}</div> -->
+                </div>
+                <div class="item">
+                    <div class="content-title">性别</div>
+                    <!-- <div class="content">{{sex}}</div> -->
+                </div>
+                <div class="item">
+                    <div class="content-title">职位</div>
+                    <!-- <div class="content">{{job}}</div> -->
+                </div>
+
+            </div>
+<!--             <div class="common-row">
+            </div> -->
+        </li>
+    </ul>
+</div>
+<!-- <div class="list-block accordion-list" style="margin:0px 0 0px 0;">
+    <ul>
+        <li class="accordion-item">
+        </li>
+    </ul>
+</div> -->
+<div class="list-block accordion-list" style="margin:0px 0 10px 0;">
+    <ul>
+    {{#each json}}
+
+        <li class="accordion-item">
+            <div class="common-row">
+                <div class="item">
+                    <!-- <div class="content-title">高管姓名</div> -->
+                    <div class="content">{{name}}</div>
+                </div>
+                <div class="item">
+                    <!-- <div class="content-title">性别</div> -->
+                    <div class="content">{{sex}}</div>
+                </div>
+                <div class="item">
+                    <!-- <div class="content-title">职位</div> -->
+                    <div class="content">{{job}}</div>
+                </div>
+
+            </div>
+<!--             <div class="common-row">
+            </div> -->
+        </li>
+        {{/each}}
+
+    </ul>
+</div>

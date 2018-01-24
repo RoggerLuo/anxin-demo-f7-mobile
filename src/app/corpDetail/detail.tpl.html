@@ -1,0 +1,242 @@
+<!--detail.tpl.html-->
+<div class="content-block" style="margin:0;">
+    <style type="text/css">
+
+    </style>
+    <div class="content-block-inner">
+        <div class="title">
+            <div class="image">
+                <img src="../../assets/images/corp-avatar.png" height="50" />
+            </div>
+            <div class="content">
+                <div class="text">{{name}}</div>
+                <div class="hint">
+                    <span class="guanzhu" style="{{guanzhuStyle}}">{{guanzhuText}}</span>
+                    <span class="goutong" onclick="showUserChatViewByUser('6956ac9b868548ce8ae9121fb9e4cea9')">即时沟通</span>
+                </div>
+                <div class="footer">
+                    <span class="left">更新：{{chanageDate}}</span>
+                    <span class="right">{{viewNum}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="tel:{{tel}}" onclick="window.location.href='tel:{{tel}}'" style="position: relative;
+    top: 89px;
+    z-index: 99999;color:black;
+    left: 14px;" class="smallword">电话：<span style="color:#3d8fff;">{{tel}}</span></a>
+
+<div class="list-block accordion-list" style="margin:0px 0;">
+    <ul>
+        <li class="accordion-item">
+            <div class="contact">
+                <div class="item">
+                    <div class="content-title">{{ownerName}}</div>
+                    <div class="content">法定代表人</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">{{regMoney}}万</div>
+                    <div class="content">注册资本</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">{{openDate}}</div>
+                    <div class="content">成立日期</div>
+                </div>
+            </div>
+        </li>
+        <li class="accordion-item">
+            <a href="#" class="item-content item-link">
+                <div class="item-inner">
+                    <div class="item-title">
+                        <!-- <span href="tel:{{tel}}" class="smallword">{{tel}}</span> -->
+                    </div>
+                    <div class="item-after"><span class="smallword">联系信息</span></div>
+                </div>
+            </a>
+            <div class="accordion-item-content">
+                <div class="content-block" style="padding:0;">
+                    <ul>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <a href="mailto:{{email}}" onclick="window.location.href='mailto:{{email}}'" style="color:black;">邮箱：<span style="color:#3d8fff;">{{email}}</span></a>
+                                    <!--<div class="item-title" style="color:black;">{{email}}</div>-->
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title" style="color:black;" onclick='openWebView("{{siteUrl}}","{{name}}");'>网址：<span style="color:#3d8fff;">{{siteUrl}}</span></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title" style="color:black;">{{address}}</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="content-block" style="margin:0;">
+    <div class="content-block-inner">
+        <div class="item-inner">
+            <div class="item-title">基本信息</div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="template">
+        <a class="content" href="./page/gongshang.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-工商信息 content-icon"></i>
+            
+            <div class="template-name">
+
+                工商信息<i class="gongshangxinxiicon"></i>
+
+            </div>
+            
+        </a>
+    </div>
+    <div class="template">
+        <a class="content" href="./page/duiwaitouzi.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-对外投资信息 content-icon"></i>
+            <div class="template-name">
+                对外投资信息
+            </div>
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="template">
+        <a class="content" href="./page/dongjiangao.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-董监高信息 content-icon"></i>
+            <div class="template-name">
+                董监高信息
+            </div>
+        </a>
+    </div>
+    <div class="template">
+        <a class="content" href="./page/qinshu.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-董监高直系亲属信息 content-icon"></i>
+            <div class="template-name" style="font-size:14px;">
+                董监高直系亲属
+            </div>
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="template">
+        <a class="content" href="./page/gudong.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-股东信息 content-icon"></i>
+            <div class="template-name">
+                股东信息
+            </div>
+        </a>
+    </div>
+    <div class="template">
+        <a class="content">
+            <!-- <i class="iconfont2 icon-jinrongleiicontubiao- content-icon"></i> -->
+            <div class="template-name">
+                &nbsp;
+            </div>
+        </a>
+    </div>
+</div>
+<div class="content-block" style="margin:0;">
+    <div class="content-block-inner">
+        <div class="item-inner">
+            <div class="item-title">扩展信息</div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="template">
+        <a class="content" href="./page/dongjiangaotouzi.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-董监高对外投资信息 content-icon"></i>
+            <div class="template-name" style="font-size:12px;">
+                董监高对外投资
+            </div>
+        </a>
+    </div>
+    <!-- line-height:1;margin-top:15px;white-space: normal;
+                line-height: 15px;
+                height: 30px;
+                margin: auto;padding-right:10px; -->
+    <div class="template">
+        <a class="content" href="./page/qinshutouzi.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-董监高亲属对外投资信息 content-icon"></i>
+            <div class="template-name" style="font-size:10px;">
+                董监高亲属对外投资
+            </div>
+        </a>
+    </div>
+</div>
+<div class="content-block" style="margin:0;">
+    <div class="content-block-inner">
+        <div class="item-inner">
+            <div class="item-title">风险信息</div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="template">
+        <a class="content" href="./page/fayuangonggao.html?id={{id}}&corpname={{name}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-法院公告 content-icon"></i>
+            <div class="template-name">
+                法院公告
+            </div>
+        </a>
+    </div>
+    <div class="template">
+        <a class="content" href="./page/zhixinggonggao.html?id={{id}}&corpname={{name}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-执行公告 content-icon"></i>
+            <div class="template-name">
+                执行公告
+            </div>
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="template">
+        <a class="content" href="./page/shixingonggao.html?id={{id}}&corpname={{name}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-失信公告 content-icon"></i>
+            <div class="template-name">
+                失信公告
+            </div>
+        </a>
+    </div>
+    <div class="template">
+        <a class="content" href="./page/caipanwenshu.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-裁判文书 content-icon"></i>
+            <div class="template-name">
+                裁判文书
+            </div>
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="template">
+        <a class="content" href="./page/jingyingyichang.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-经营异常 content-icon"></i>
+            <div class="template-name">
+                经营异常
+            </div>
+        </a>
+    </div>
+    <div class="template">
+        <a class="content" href="./page/xingzhengchufa.html?id={{id}}">
+            <i class="iconfont2 icon-jinrongleiicontubiao-行政处罚 content-icon"></i>
+            <div class="template-name">
+                行政处罚
+            </div>
+        </a>
+    </div>
+</div>

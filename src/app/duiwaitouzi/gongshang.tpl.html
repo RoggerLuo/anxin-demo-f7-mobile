@@ -1,0 +1,67 @@
+{{#each json}}
+
+<div class="list-block accordion-list" style="margin:0px 0 10px 0;">
+    <ul>
+        <li class="accordion-item">
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">企业（机构）名称</div>
+                    <div class="content">{{name}}</div>
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">企业（机构）类型</div>
+                    <div class="content">{{type}}</div>
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">法定代表人姓名</div>
+                    <div class="content">{{ownerName}}</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">企业总数量</div>
+                    <div class="content">{{companyNum}}</div>
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">注册资本(万元)</div>
+                    <div class="content">{{regMoney}}</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">币种</div>
+                    <div class="content">{{moneyType}}</div>
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">认缴出资额（万元）</div>
+                    <div class="content">{{fundMoney}}</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">币种</div>
+                    <div class="content">{{fundMoneyType}}</div>
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">出资比例</div>
+                    <div class="content">{{fundProportion}}</div>
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">出资方式</div>
+                    <div class="content">{{fundType}}</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">原注册号</div>
+                    <div class="content">{{oldCode}}</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+{{/each}}

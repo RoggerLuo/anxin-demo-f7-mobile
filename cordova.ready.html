@@ -1,0 +1,19 @@
+<script src="applocal://www/cordova.min.js"></script>
+<script type="text/javascript">
+    document.addEventListener("deviceready", function() {
+        alert(cordova);
+        function getUserToken(){
+            cordova.exec(
+                function(winParam) {
+                    alert(winParam);
+                },
+                function(error) {
+                    alert("调用失败");
+                },
+                "WorkPlus_Auth",
+                "getUserToken", 
+                []);
+        }
+        getUserToken();            
+    })
+</script>

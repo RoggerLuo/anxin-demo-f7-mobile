@@ -1,0 +1,109 @@
+.corp-detail-page {
+    .smallword{
+        font-size: 14px;
+    }
+    .title {
+        display: flex;
+        .image {
+            flex: 1;
+            margin: 15px 5px;
+        }
+        .content {
+            flex: 4;
+            .text {
+                font-weight: bold;
+                font-size: 18px;
+                margin: 5px 0;
+            }
+            .hint {
+                margin: 5px 0;
+                .guanzhu {
+                    padding: 0 10px;
+                    color: red;
+                    border: 1px solid red;
+                    border-radius: 10px;
+                }
+                .goutong {
+                    padding: 0 10px;
+                    color: #3d8fff;
+                    border: 1px solid #3d8fff;
+                    border-radius: 10px;
+                    margin: 0 10px;
+                }
+            }
+            .footer {
+                margin: 10px 0;
+
+                .left {
+                    color: #3d8fff;
+                }
+                .right {
+                    color: #CCC;
+                    position: absolute;
+                    right:30px;
+                }
+            }
+        }
+    }
+    .contact{
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        .item{
+            flex:1;
+            text-align: center;
+            .content-title{
+                // font-weight: bold;
+                padding: 10px 0 3px 0;
+                font-size: 14px;
+
+            }
+            .content{
+                padding: 0px 0 5px 0;
+                font-size: 14px;
+                color:#636363;
+            }
+        }
+        .item+.item{
+            border-left:1px solid #ccc;
+        }
+    }
+    .row {
+        display: flex;
+        background-color: white;
+        border-bottom: 1px solid #ddd;
+        .template {
+            display: flex;
+            flex: 1;
+            border-left: 1px solid #ddd;
+            .content-icon {
+                font-size: 30px;
+                padding-right: 10px;
+                line-height: 55px;
+                color: #3d8fff;
+            }
+            .content-icon-small {
+                font-size: 28px;
+                padding-right: 10px;
+                line-height: 55px;
+                color: #3d8fff;
+            }
+            .content {
+                display: flex;
+                margin-left: 16px;
+                line-height: 55px;
+
+                .template-img {
+                    text-align: center;
+                    min-width: 50px;
+                    min-height: 50px;
+                }
+                .template-name {
+                    text-align: center;
+                    color: #a0a0a0;
+                    font-size: 15px;
+                    // margin: 18px 0 0 0;
+                }
+            }
+        }
+    }
+}

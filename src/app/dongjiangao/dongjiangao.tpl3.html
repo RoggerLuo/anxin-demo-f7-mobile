@@ -1,0 +1,28 @@
+{{#each json}}
+<div class="list-block accordion-list" style="margin:10px 0 10px 0;">
+    <ul>
+        <li class="accordion-item">
+            <a href="./page/fayuandetail.html?originid={{originid}}&gonggaoid={{announceId}}">
+                <!-- <div class="item">
+                    <div class="corpname">{{corpname}}</div>
+                </div> -->
+                <div class="item">
+                    <div class="corpname">{{name}}</div>
+                </div>
+<!--                 <div class="item">
+                    <sapn class="keyword">公告类型:</sapn>
+                    <span class="content">{{type}}</span>
+                </div> -->
+                <div class="item">
+                    <span class="keyword">性别</span>
+                    <span class="content">{{sex}}</span>
+                </div>
+                <div class="item">
+                    <span class="keyword">职位</span>
+                    <span class="content">{{job}}</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+{{/each}}

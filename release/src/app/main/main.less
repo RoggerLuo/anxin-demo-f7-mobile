@@ -1,0 +1,56 @@
+.indexPage{
+    .icon-newsvg{
+      background-image: url('../../assets/images/new.svg');
+      width: 30px;
+      height: 30px;
+      background-size: 30px;
+    }
+
+    .kindBlock, .reportBlock{
+        display: none;
+    }
+    .choseReportBlock{
+        width: 100%;
+        background: #fff;
+        .choseReportInnerBlock{
+            width: 95%;
+            height: 140px;
+            padding-left: 5%;
+            overflow-y: auto;
+            .choseReportLi{
+                font-size: 16px;
+                line-height: 25px;
+                list-style: none;
+                margin-top: 1px;
+                &:first-child{
+                    margin-top: 8px;
+                }
+                &:last-child{
+                    margin-bottom: 5px;
+                }
+            }
+            .choseReportLiActive{
+                background: #e3e3e3;
+            }
+        }
+    }
+    .choseTimeBlock{
+        width: 100%;
+        margin-top: 15px;
+        background: #fff;
+        .choseTimeInnerBlock{
+            width: 90%;
+            height: 30px;
+            padding: 10px 5%;
+            line-height: 27px;
+            .choseTimeInput, .choseTimeLabel{
+                position: relative;
+                float: left;
+                margin-right: 10px;
+            }
+            .choseTimeInput input{
+                width: 110px;
+            }
+        }
+    }
+}

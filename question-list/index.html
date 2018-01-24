@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="theme-color" content="#2196f3">
+    <link rel="stylesheet" href="style.css">
+    <title>新三板</title>
+</head>
+
+<body class="" >
+    <div class="statusbar-overlay"></div>
+    <div class="views">
+        <div class="view view-main">
+            <div class="pages navbar-fixed">
+                <div data-page="index" class="page main-page">
+                    <div class="navbar">
+                        <div class="navbar-inner">
+                            <div class="left">
+                                <a href="#" class="back link exitButton"><i class="icon icon-back1"></i></a>
+                            </div>
+                            <div class="center">券商审查</div>
+                        </div>
+                    </div>
+                    <div class="page-content home-page indexPage" style="display:flex;flex-direction:column;">
+                        <form data-search-list=".list-block-search" data-search-in=".item-title" class="searchbar searchbar-init">
+                            <div class="searchbar-input">
+                                <input type="search" placeholder="请输入企业名称、人名、品牌">
+                                <a href="#" class="searchbar-clear"></a>
+                            </div>
+                            <!-- <a href="#" class="searchbar-cancel">Cancel</a> -->
+                        </form>
+                        <!-- <div> -->
+                            <div class="choseReturnBlock">
+                                <div class="choseReturnInnerBlock">
+                                    <div class="returnText">分类检索：</div>
+                                    <div class="returnSelect" style="justify-content:flex-start;">
+                                        <select class="selectSmall" style="width:130px;">
+                                            <option>全部</option>
+                                            <option>2016年2月</option>
+                                            <option>2016年3月</option>
+                                            <option>2016年4月</option>
+                                            <option>2016年5月</option>
+                                            <option>2016年6月</option>
+                                            <option>2016年7月</option>
+                                            <option>2016年8月</option>
+                                        </select>
+                                        <a href="" class="button color-black" style="margin-left:10px;">查询</a>
+                                    </div>
+                                </div>
+                                <div class="choseTableBlock">
+                                    <table class="comTable">
+                                        <thead>
+                                            <!-- <th>序号</th> -->
+                                            <th>类别</th>
+                                            <th>问题简述</th>
+                                            <!-- <th>操作</th> -->
+                                        </thead>
+                                        <tbody class="comTbody">
+                                            <tr>
+                                                <td>挂牌公司1</td>
+                                                <td>未完成</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="choseReturnBlock">
+                                <div class="choseReturnInnerBlock">
+                                    <div class="returnText">常见问题：</div>
+                                </div>
+                                <div class="choseTableBlock">
+                                    <table class="comTable">
+                                        <thead>
+                                            <!-- <th>序号</th> -->
+                                            <th>类别</th>
+                                            <th>问题简述</th>
+                                            <!-- <th>操作</th> -->
+                                        </thead>
+                                        <tbody class="comTbody">
+                                            <tr>
+                                                <td>挂牌公司1</td>
+                                                <td>未完成</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="applocal://www/cordova.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>

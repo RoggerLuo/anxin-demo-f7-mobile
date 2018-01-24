@@ -1,0 +1,119 @@
+.indexPage{
+  .icon-newsvg{
+    background-image: url('../../assets/images/new.svg');
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+  }
+  .icon{
+    font-size: 40px;
+    color:red;
+    line-height: 15px;
+  }
+  .choseComBlock {
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    background: #fff;
+    .choseComInnerBlock{
+      height: 40px;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      .comText{
+        font-size: 16px;
+        flex: 1;
+        text-align: right;
+      }
+      .comSelect{
+        flex: 3;
+        select{
+        font-size: 14px;
+        width: 180px;
+        }
+        a{
+          margin-top: 10px;
+          width: 150px;
+          height: 35px;
+          font-size: 16px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+  .choseReturnBlock {
+    width: 100%;
+    margin-top: 20px;
+    background: #fff;
+    
+    flex: 1;
+    // overflow: scroll;
+
+    display: flex;
+    flex-direction: column;
+
+    .choseReturnTitleBlock {
+      width: 100%;
+      height: 55px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 60px;
+      text-align: center;
+    }
+    .choseReturnInnerBlock{
+      height: 25px;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+      .returnText{
+        font-size: 16px;
+        font-weight: 600;
+        flex: 1;
+        // text-align: right;
+      }
+      .returnSelect{
+        flex: 3;
+        display: flex;
+        justify-content: space-between;
+        select{
+          font-size: 14px;
+          width: 100px;
+        }
+        span{
+          font-size: 16px;
+          font-weight: 600;
+          color: red;
+        }
+      }
+    }
+    .choseTableBlock{
+      width: 92%;
+      margin: auto;
+      overflow-y: auto;
+      margin-top: 10px;
+      background: #fff;
+      .comTable{
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+        line-height: 30px;
+        th{
+          background: #ddd;
+          border:1px solid #999;
+        }
+        tr td{
+          height: 30px;
+          overflow-y: auto;
+          text-align: center;
+          border:1px solid #999;
+          &:nth-child(3){
+            color: red;
+          }
+          &:nth-child(4){
+            color: green;
+          }
+        }
+      }
+    }
+  }
+}

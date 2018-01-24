@@ -1,0 +1,25 @@
+{{#each json}}
+<div class="list-block accordion-list" style="margin:10px 0 10px 0;">
+    <ul>
+        <li class="accordion-item">
+            <a href="./page/zhixingdetail.html?originid={{originid}}&gonggaoid={{dishonestId}}">
+                <div class="item">
+                    <div class="corpname">{{title}}</div>
+                </div>
+                <div class="item">
+                    <sapn class="keyword">执行状态:</sapn>
+                    <span class="content">{{status}}</span>
+                </div>
+                <div class="item">
+                    <span class="keyword">案件状态</span>
+                    <span class="content">{{caseStatus}}</span>
+                </div>
+                <div class="item">
+                    <span class="keyword">法院</span>
+                    <span class="content">{{court}}</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+{{/each}}

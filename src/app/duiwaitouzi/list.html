@@ -1,0 +1,15 @@
+{{#each json}}
+
+<div class="list-block accordion-list" style="margin:0px 0 10px 0;">
+    <ul>
+        <li class="accordion-item">
+            <div class="common-row">
+                <a class="item" href="./page/duiwaitouzi.html?id={{companyId}}&specialPage=detail&detailId={{id}}">
+                    <div class="content-title" style="color:black;text-align:center;">{{name}}</div>
+                    <div class="content" style="text-align:center;color:black;">{{fundMoney}}万元,{{fundProportion}}</div>
+                </a>            
+            </div>
+        </li>
+    </ul>
+</div>
+{{/each}}

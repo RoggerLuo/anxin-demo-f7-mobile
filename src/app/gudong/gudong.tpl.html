@@ -1,0 +1,70 @@
+<div class="list-block accordion-list" style="margin:0px 0 10px 0;">
+    <ul>
+        <li class="accordion-item">
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">股东总数量</div>
+                    <div class="content">{{partnerNum}}</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">股东出资比例总和</div>
+                    <div class="content">{{fundProportionTotal}}</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">认缴出资总额</div>
+                    <div class="content">{{fundTotal}}万元人民币</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+{{#each json}}
+<!-- <div class="list-block accordion-list" style="margin:0px 0 0px 0;">
+    <ul>
+        <li class="accordion-item">
+        </li>
+    </ul>
+</div> -->
+<div class="list-block accordion-list" style="margin:0px 0 10px 0;">
+    <ul>
+        <li class="accordion-item">
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">高管姓名</div>
+                    <div class="content">{{name}}</div>
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">出资方式</div>
+                    <div class="content">{{fundType}}</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">出资比例</div>
+                    <div class="content">{{fundProportion}}</div>
+                </div>
+                <div class="item">
+                    <div class="content-title">出资日期</div>
+                    <div class="content">{{fundDate}}</div>
+                </div>
+            </div>
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">认缴出资额</div>
+                    <div class="content">{{fundMoney}}万元人民币</div>
+                </div>
+                <!--                 <div class="item">
+                    <div class="content-title">币种</div>
+                    <div class="content">{{fundMoneyType}}</div>
+                </div> -->
+            </div>
+            <div class="common-row">
+                <div class="item">
+                    <div class="content-title">国别</div>
+                    <div class="content">{{citizenship}}</div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+{{/each}}

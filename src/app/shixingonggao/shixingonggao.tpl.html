@@ -1,0 +1,25 @@
+{{#each json}}
+<div class="list-block accordion-list" style="margin:10px 0 10px 0;">
+    <ul>
+        <li class="accordion-item">
+            <a href="./page/shixindetail.html?originid={{originid}}&gonggaoid={{dishonestId}}" class="right-arrow">
+                <div class="item">
+                    <div class="corpname">{{corpname}}</div>
+                </div>
+                <div class="item">
+                    <sapn class="keyword">执行依据文号:</sapn>
+                    <span class="content">{{basisId}}</span>
+                </div>
+                <div class="item">
+                    <span class="keyword">法院</span>
+                    <span class="content">{{court}}</span>
+                </div>
+                <div class="item">
+                    <span class="keyword">发布时间</span>
+                    <span class="content">{{releaseTime}}</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+{{/each}}

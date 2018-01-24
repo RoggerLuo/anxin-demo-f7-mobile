@@ -1,0 +1,228 @@
+@import 'mixins';
+@import 'icon';
+.uploadButton{
+    background-color: white;
+}
+.list-block ul:before {
+    background-color: white !important;
+}
+textarea{
+    vertical-align: middle;
+    height: 80px;
+    width: 190px;
+    margin-left: 10px;
+    margin-right: 30px;
+    background-color: white;
+}
+
+.content-container{
+    text-align: center;
+    flex:1;
+    border-radius: 15px;
+    background-color:#ccc;
+    margin: 0 10px;
+}
+
+.list-block {
+    overflow: hidden;
+}
+
+.item-content+.item-content {
+    border-top: 1px solid #CCC;
+}
+
+.textBefore {
+    // width: 80px;
+    font-size: 16px;
+    display: inline-block;
+    color: #929297;
+}
+
+.textAfter {
+    font-size: 16px;
+    text-align: left;
+    display: inline-block;
+}
+
+.text-inner {
+    white-space: nowrap;
+}
+
+.view-process {
+    width: 145px;
+    height: 40px;
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 40px;
+    display: inline-block;
+}
+.baocun{
+    width:110px;
+}
+.guanbi{
+    width:110px;
+
+    margin-left: 30px;
+}
+.item-media img {
+    width: auto;
+    height: auto;
+    max-width: 40px;
+    border-radius: 50%;
+}
+
+.navbar a.link,
+{
+    color: #fff;
+}
+
+.navbar-inner {
+    background: #1A98FF;
+    color: #fff;
+}
+
+.icon-back1 {
+    color: #fff;
+    font-size: 40px;
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+.icon-plus {
+    color: #fff;
+}
+
+.buttonBlock {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    .btns {
+        width: 200px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 35px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+}
+
+h3.center {
+    text-align: center;
+}
+
+.textarea-input-box {
+    display: none;
+}
+
+.textarea-input {
+    width: 100%;
+    border: 1px solid #f9f9f9;
+}
+
+.result-page,
+.see-page {
+    background: #fff;
+}
+
+.select-box {
+    width: 100%;
+}
+
+.table {
+    table {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+.handleTableBlock {
+    width: 100%;
+    min-height: 260px;
+    overflow-y: auto;
+    margin-top: 10px;
+    background: #fff;
+    .handleTable {
+        width: 100%;
+        border-spacing: 0;
+        border-collapse: collapse;
+        line-height: 30px;
+        th {
+            background: #ddd;
+            border: 1px solid #999;
+            &:nth-child(1) {
+                width: 30px;
+            }
+            &:nth-child(3),
+            &:nth-child(4) {
+                width: 50px;
+            }
+        }
+        tr td {
+            height: 30px;
+            overflow-y: auto;
+            text-align: center;
+            border: 1px solid #999;
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
+
+.uploadPage {
+    .itemBefore {
+        width: 90px;
+        font-size: 16px;
+    }
+    .itemAfter {
+        font-size: 14px;
+        text-align: left;
+        color: #929297;
+    }
+    .downloadButton {
+        width: 80px;
+        height: 25px;
+        margin: 2px 0 0 110px;
+        font-size: 14px;
+        line-height: 25px;
+        display: inline-block;
+    }
+    .downloadSuccessText {
+        color: green;
+        font-size: 14px;
+        padding-left: 10px;
+        // display: inline-block;
+        display: none;
+    }
+    .itemBefore1 {
+        width: 130px;
+        font-size: 14px;
+        color: red;
+    }
+    .itemAfter1 {
+        a {
+            width: 50px;
+            height: 25px;
+            margin-left: -210px;
+            font-size: 14px;
+            line-height: 25px;
+            position: relative;
+            float: left;
+        }
+        .uploadSuccess {
+            color: green;
+            font-size: 14px;
+            line-height: 25px;
+            position: relative;
+            float: left;
+            margin-left: -150px;
+            display: none;
+        }
+    }
+}

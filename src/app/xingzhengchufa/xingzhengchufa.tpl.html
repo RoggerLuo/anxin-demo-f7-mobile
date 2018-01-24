@@ -1,0 +1,25 @@
+{{#each json}}
+<div class="list-block accordion-list" style="margin:10px 0 10px 0;">
+    <ul>
+        <li class="accordion-item">
+            <a href="./page/xingzhengchufadetail.html?originid={{originid}}&gonggaoid={{id}}" class="right-arrow">
+                <div class="item">
+                    <div class="corpname">{{illegalType}}</div>
+                </div>
+                <div class="item">
+                    <sapn class="keyword">处罚依据:</sapn>
+                    <span class="content">{{basis}}</span>
+                </div>
+<!--                 <div class="item">
+                    <span class="keyword">案件状态</span>
+                    <span class="content">{{caseStatus}}</span>
+                </div> -->
+                <div class="item">
+                    <span class="keyword">处罚种类</span>
+                    <span class="content">{{punishType}}</span>
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+{{/each}}
